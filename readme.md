@@ -52,4 +52,4 @@ Requirements:
 - Allow the user to toggle the clock from, 12hr to military time. 
 
 ###Finished?
-When You are finished please slack the url for your github repo to me with in a DM.
+When You are finished please slack the url for your github repo to me with in a DM.   
