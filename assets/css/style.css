@@ -1,0 +1,59 @@
+.body{
+    background-size: contain;
+}
+
+.weather-card{
+    color:white;  
+    background-color: rgba(0, 0, 0, 0.2);  
+    border-radius: 5px;
+    width: 170px;
+    font-family: 'Quicksand', sans-serif;       
+    padding-bottom: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+
+}
+    
+.nonsense{
+    color: white;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+.clock{
+    color: white;
+    font-family: 'Quicksand', sans-serif;  
+    font-size: 11rem;
+    text-align: center; 
+    margin-top: 35vh !important;
+}
+    
+
+#todo{
+    font-family: 'Quicksand', sans-serif;
+    max-width: 200px;
+    margin-left: -30px !important;
+}
+
+.checkbox{
+    color: white;
+}
+
+.height{
+    height: 0vh
+}
+
+.hoverme{
+    display: none;
+}
+    
+.yeah:hover + .hoverme {
+    display: block;
+    color:white;
+}
+    
+
+
+    
+
+

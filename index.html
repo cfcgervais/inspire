@@ -3,38 +3,64 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Inspire</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Amita|Poiret+One|Quicksand|Josefin+Slab" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-<body id="body">
-	<div id="weather">
-
-	</div>
-
-	<div id="quote">
-
-	</div>
-
-	<div id="todo">
-
-	</div>
-
-
-
-
+<body id="body" class="container-fluid">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-3 height">
+				<div id="todo">
+					<div class="input-group">
+						<span class="input-group-btn">
+							<button class="btn btn-info" type="button" id="addButton">Add</button>
+						</span>
+						<input type="text" class="form-control" placeholder="What to do?" id="input-box">
+					</div>
+					<div id="count" class="checkbox"></div>
+					<div class="checkbox" id="todoList"></div>
+				</div>
+			</div>
+			<div class="col-xs-6 text-center height">
+				<div id="quote" class="nonsense"></div>
+			</div>
+			<div class="col-xs-3 height">
+				<div id="weather"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="txt" class="clock"></div>
+		</div>
+	</div>	
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="app/init.js"></script>
 	<script src="app/components/weather/weather-service.js"></script>
 	<script src="app/components/image/image-service.js"></script>
 	<script src="app/components/quote/quote-service.js"></script>
 	<script src="app/components/todo/todo-service.js"></script>
-
-	<!--Load your scripts below-->
+	<script src="app/clock.js"></script>
 	<script src="app/components/weather/weather-controller.js"></script>
 	<script src="app/components/image/image-controller.js"></script>
 	<script src="app/components/quote/quote-controller.js"></script>
 	<script src="app/components/todo/todo-controller.js"></script>
-
 </body>
-
 </html>
+	
+		
+						
+				
+				
+						
+
+	
+				
+					
+
+
+
+
+
+
+
+

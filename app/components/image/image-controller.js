@@ -1,5 +1,28 @@
 (function(){
-	
-	//Your ImageService is a global constructor function what can you do here if you new it up?
-	
+
+	function imageController(){
+		var imageService = new ImageService
+		imageService.getImage(drawImage)
+		function drawImage(image){
+			var image = JSON.parse(image)
+			var template = `<style>#body{
+				background-image: url(${image.large_url}); 
+				background-size: cover;}</style>`
+		$('#body').append(template)
+		}
+	}
+	imageController();
 }())
+	
+	
+			
+			
+		
+
+		
+			
+	
+
+
+
+

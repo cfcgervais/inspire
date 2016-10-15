@@ -8,6 +8,8 @@ function ImageService() {
 		return $.get(apiUrl, function (res) {
 			console.log('Image Data:', res)
 			//What are you going to do with the image that comes back?
+			$.get(apiUrl, callWhenDone)
 		})
 	}
 }
+			
