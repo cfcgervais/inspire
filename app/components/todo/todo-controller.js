@@ -19,7 +19,7 @@
 		}
 		countElem.empty().append(template2)
 		for(var i = 0; i < list.length; i++){
-			template += `<label><input type="checkbox" value="">${list[i]}</label></br>`
+			template += `<button id="remove">X</button><label>${list[i]}</label></br>`
 		}
 
 		todoElem.empty().append(template)
@@ -27,14 +27,35 @@
 		list = todoService.getTodos()
 		
 	}
+		function deleteTodo(){
+			for(i=0; i < list.length; i++){
+				var item = list[i]
+				if(item == item){
+				list.splice(i,1)
+				todoService.saveTodos(list)
+				}
+			}
+		}
+
+	$('#remove').on('click', function(){
+		deleteTodo()
+	})
 
 	$('#addButton').on('click', function(){
 		drawTodo()
 	})
-		
-}())
 
+}())
+	
 		
+		
+		
+			
+            
+
+
+
+
 
 
 

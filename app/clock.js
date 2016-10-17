@@ -11,6 +11,9 @@ function startTime() {
     if(h > 12){
         h = h-12
     }
+    if(h == 0){
+        h = 12
+    }
     document.getElementById('txt').innerHTML =
     h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
