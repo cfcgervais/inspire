@@ -47,9 +47,13 @@
     display: none;
 }
     
-.yeah:hover + .hoverme {
+.yeah:hover + .hoverme{
     display: block;
     color:white;
+}
+
+input[type="text"]{
+    background: transparent;
 }
     
 
